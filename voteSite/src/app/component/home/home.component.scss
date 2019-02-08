@@ -1,0 +1,74 @@
+.home-container {
+  height: calc(100vh - 64px);
+  width: calc(100vw - 17px);
+  margin-top: 64px;
+  background-image: url('assets/2018-04-18.jpg');
+  background-size: cover;
+}
+
+@media only screen and (max-width: 750px) {
+  .home-container {
+    width: 100vw;
+  }
+}
+
+.home-center {
+  text-align: center;
+  padding-top: 10vh;
+  color: snow;
+}
+
+.home-title {
+  -webkit-text-stroke: 0.5vw #000;
+  margin-top: -10vw;
+  margin-bottom: -10vw;
+  font-size: 15vw;
+  font-family: "Baloo", serif;
+}
+
+.home-text {
+  font-size: 4vw;
+  max-width: 85vw;
+  margin-bottom: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-text-stroke: 0.15vw #000;
+  font-family: "Baloo", "HG創英角ﾎﾟｯﾌﾟ体", "Rounded Mplus 1c", serif;
+}
+
+.home-timer {
+  font-size: 4vw;
+  -webkit-text-stroke: 0.15vw #000;
+  font-family: "Baloo", "HG創英角ﾎﾟｯﾌﾟ体", "Rounded Mplus 1c", serif;
+  margin-top: 10vh;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.dev-button {
+  font-size: 2vw;
+  height: 8vw;
+}
+
+.dev-button-icon {
+  font-size: 2vw;
+}
+
+.vote-button {
+  width: 50vw;
+  height: 12vh;
+  font-size: 4vh;
+  font-family: "Baloo", "HG創英角ﾎﾟｯﾌﾟ体", "Rounded Mplus 1c", serif;
+  background-color: orangered;
+  color: white;
+  -webkit-text-stroke: 0.08vw #000;
+}

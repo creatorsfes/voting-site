@@ -1,0 +1,39 @@
+.sentence-header-image {
+  background-size: cover;
+}
+
+.mat-dialog-title{
+  margin-bottom: 5px
+}
+
+.mat-dialog-content {
+  max-height: 60vh;
+}
+
+.main-content-image {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card-image {
+  max-width: 80vw;
+  max-height: 60vh;
+  width: auto;
+  height: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  .card-image {
+    width: 85vw;
+    height: auto;
+    max-width: inherit;
+    max-height: inherit;
+  }
+}
+
+.list-image {
+  width: 8vw;
+  margin-left: 5vw;
+  cursor: pointer;
+}

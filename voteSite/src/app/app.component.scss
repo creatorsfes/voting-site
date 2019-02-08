@@ -1,0 +1,43 @@
+.pad {
+  padding: 0 14px;
+}
+
+.ball-radius {
+  border-radius: 20px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.top-toolbar {
+  background: white;
+  position: fixed;
+  margin-top: -64px;
+  min-height: 64px !important;
+  z-index: 100;
+}
+
+.title-font {
+  color: #e543d5;
+  font-weight: bold;
+  font-family: 'Baloo';
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+  .title-font {
+    color: #e543d5;
+    font-weight: bold;
+    font-family: 'Baloo';
+    font-size: 7vw;
+    cursor: pointer;
+  }
+}
+
+.top-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}

@@ -1,0 +1,19 @@
+<mat-toolbar class="top-toolbar">
+  <mat-toolbar-row>
+    <span class="title-font" (click)="showHome()">Creators Fes</span>
+    <span class="example-spacer"></span>
+    <button mat-button (click)="showVote()">投票</button>
+    <button mat-raised-button class="pad ball-radius" color="primary" *ngIf="!userName" (click)="login()">ログイン</button>
+    <ng-container *ngIf="userName">
+      <button mat-raised-button class="ball-radius" [matMenuTriggerFor]="menu" color="primary">
+        <i class="fa fa-lg fa-user"></i> {{userName}}</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="logout()">ログアウト</button>
+      </mat-menu>
+    </ng-container>
+  </mat-toolbar-row>
+</mat-toolbar>
+<app-home *ngIf="homeFlag"></app-home>
+<app-vote *ngIf="voteFlag"></app-vote>
+
+<button mat-mini-fab ngx-scroll-to [ngx-scroll-to-offset]="-3000" class="top-button"><mat-icon>keyboard_arrow_up</mat-icon></button>

@@ -1,0 +1,10 @@
+<div class="home-container">
+  <!-- <video src="assets/test.mp4" autoplay loop></video> -->
+  <div class="home-center">
+    <p class="home-title">Creators Fes</p>
+    <p class="home-text">技術力を向上し自由な発想で最新の技術に触れユニークな製品を作る試み</p>
+    <button mat-raised-button class="vote-button" (click)="voteClick()">投票する!!</button><br>
+    <button mat-button [ngx-scroll-to]="'#destination'" class="dev-button">運営者紹介<br><mat-icon class="dev-button-icon">keyboard_arrow_down</mat-icon></button>
+  </div>
+</div>
+<app-dev-member id="destination"></app-dev-member>

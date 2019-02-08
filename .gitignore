@@ -1,0 +1,8 @@
+.metadata/
+.recommenders/
+RemoteSystemsTempFiles/
+*.db
+voteServer/src/main/resources/static
+voteServer/mvnw
+voteServer/mvnw.cmd
+voteServer/.mvn/

@@ -1,0 +1,32 @@
+<div mat-dialog-title>{{data[0].name}}
+  <font size="2vw">{{data[0].romaname}}</font>
+</div>
+<div mat-dialog-content>
+  <div class="main-content-image">
+    <img class="card-image" *ngIf="selectMainImg" [src]="selectMainImg" />
+  </div>
+  <div class="main-content-image-list">
+    <ng-container *ngFor="let iUrl of data[0].image">
+      <img class="list-image" [src]="iUrl" (click)="selectImg(iUrl)" />
+    </ng-container>
+  </div>
+  <div [innerHtml]="data[0].comment"></div>
+</div>
+<div mat-dialog-actions>
+  <div>
+    <button mat-button (click)="goodJobChange()" *ngIf="!data[1]">いいね！
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-button (click)="goodJobChange()" color="warn" *ngIf="data[1]">いいね！
+      <mat-icon color="warn">favorite</mat-icon>
+    </button>
+    <button mat-button (click)="futureChange()" *ngIf="!data[2]">今後に期待！
+      <mat-icon>thumb_up</mat-icon>
+    </button>
+    <button mat-button (click)="futureChange()" color="warn" *ngIf="data[2]">今後に期待！
+      <mat-icon color="warn">thumb_up</mat-icon>
+    </button>
+    <br>
+    <button mat-button (click)="onNoClick()" cdkFocusInitial>閉じる</button>
+  </div>
+</div>
